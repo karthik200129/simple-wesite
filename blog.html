@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #1a3a4a;
+            color: white;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 80vh;            /* Full viewport height */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+         
+    }
+        .login-form {
+            background-color: #f5f5f5;
+            padding: 30px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #1a3a4a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .register-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+
+        footer {
+            background-color: #1a3a4a;
+            color: white;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .map {
+            width: 300px;
+            height: 200px;
+            background-color: #ccc;
+        }
+        .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1a3a4a;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  float: none;
+}
+
+.dropdown-content li a {
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: white;
+}
+
+.dropdown-content li a:hover {
+  background-color: #555;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+    <script>
+        function navigateToPage(event) {
+            event.preventDefault();  // Prevent the form from submitting
+            window.location.href = "index.html";  // Navigate to the new page
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Gateway Of North Karnataka</div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li class="dropdown">
+                  <a href="#">CATEGORY</a>
+                  <ul class="dropdown-content">
+                     
+                    <li><a href="laandmark.html">LANDMARK</a></li>
+                    <li><a href="cultural.html">CULTURAL</a></li>
+                    <li><a href="cuisine.html">CUISINE</a></li>
+                  </ul>
+                </li>
+                <li><a href="blog.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-form">
+            <h1>LOGIN</h1>
+            <form>
+                <input type="text" placeholder="USERNAME" required>
+                <input type="password" placeholder="PASSWORD" required>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">REMEMBER ME</label>
+                </div> 
+                
+                <button type="submit" class="login-btn">LOGIN</button>
+            </form>
+            <div class="register-link">
+                <p>DON'T HAVE ACCOUNT ? <a href="registration.html">REGISTER HERE</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p>  Gateway Of North Karnataka</p>
+                <div class="footer-contact pt-3">
+                    <p>Hubballi-Dharwad</p>
+                    <p>Vidyanagar 2nd stage,Hubballi Karnataka,India.</p>
+                    <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+                    <p><strong>Email:</strong> <span>info@example.com</span></p>
+                  </div>
+            </div>
+            <div class="footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="history.html">HISTORY</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="cultural.html">CULTUREL</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="laandmark.html">LANDMARKS</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="cuisine.html">CUISINE</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="blog.html">LOGIN</a></li>
+                 </ul>
+            </div>
+            <!-- <div class="social-icons">
+                <h4>Follow Us ON</h4>
+                <a href="#" aria-label="Facebook">f</a>
+                <a href="#" aria-label="Instagram">I</a>
+                <a href="#" aria-label="Twitter">T</a>
+                <a href="#" aria-label="LinkedIn">in</a>
+            </div> -->
+            <div>
+                <h4>TWIN CITY MAP</h4>
+                <!-- Placeholder for map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246191.52147821!2d74.91005139482367!3d15.390424548147465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d1702c986663%3A0xd0ae0b7bfb890fae!2sHubli-Dharwad%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1727320836992!5m2!1sen!2sin" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <p>@copyrights reserved</p>
+            <p>Designed by- Gurudeep & Karthik</p>
+        </div>
+    </footer>
+</body>
+</html>

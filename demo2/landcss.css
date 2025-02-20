@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+img {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    max-height: 180px;
+    width: 100%;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer h5 {
+    font-size: 1.3rem;
+}
+
+footer ul li a {
+    color: rgb(87, 48, 192);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+

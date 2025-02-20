@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubballi-Dharwad Login</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #1a3a4a;
+            color: white;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .login-form {
+            background-color: #f5f5f5;
+            padding: 30px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #1a3a4a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .register-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        footer {
+            background-color: #1a3a4a;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .social-icons a {
+            color: white;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .map {
+            width: 200px;
+            height: 100px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="history.html">HISTORY</a>
+                <a href="#">CATEGORY</a>
+                <a href="blog.html">LOGIN</a>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="login-form">
+                <h1>LOGIN</h1>
+                <form>
+                    <input type="text" placeholder="USERNAME" required>
+                    <input type="password" placeholder="PASSWORD" required>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">REMEMBER ME</label>
+                    </div> 
+                    
+                    <button type="submit" class="login-btn">LOGIN</button>
+                </form>
+                <div class="register-link">
+                    <p>DON'T HAVE ACCOUNT ? <a href="registration.html">REGISTER HERE</a></p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div>
+                <p>Hubballi-Dharwad, Karnataka, India.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">i</a>
+                    <a href="#" aria-label="Twitter">t</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+            <div>
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Landmarks</a></li>
+                </ul>
+            </div>
+            <div class="map">
+                <!-- Placeholder for map -->
+                <img src="/api/placeholder/200/100" alt="Map of Hubballi-Dharwad">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
